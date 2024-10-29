@@ -3,6 +3,7 @@ import Cliente from '../modelos/cliente';
 import Armazem from '../dominio/armazem';
 import ImpressorCliente from '../impressores/impressorCliente';
 import { TipoDocumento } from '../enumeracoes/TipoDocumento';
+import CadastrarDocumentosCliente from './cadastrarDocumentosCliente';
 
 export default class CadastroClienteDependente extends Processo {
     private clientes: Cliente[];
@@ -24,6 +25,10 @@ export default class CadastroClienteDependente extends Processo {
         if (this.titular) {
             this.inicializarDependente();
             this.capturarDadosDependente();
+
+            // Inicia o processo de cadastro de documentos para o dependente
+            const cadastroDocumentos = new CadastrarDocumentosCliente(this.dependente);
+            cadastroDocumentos.processar();
 
             // Adiciona dependente ao titular e ao Armazem
             this.titular.adicionarDependente(this.dependente);
