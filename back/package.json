@@ -1,0 +1,35 @@
+{
+  "dependencies": {
+    "@types/node": "^18.0.0",
+    "@types/prompt-sync": "^4.1.1",
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "mysql2": "^3.11.4",
+    "prompt-sync": "^4.2.0",
+    "sequelize": "^6.37.5",
+    "ts-node": "^10.9.2",
+    "uuid": "^11.0.3"
+  },
+  "name": "atvs",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node src/ts/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elisarachel/atvs_tpII.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elisarachel/atvs_tpII/issues"
+  },
+  "homepage": "https://github.com/elisarachel/atvs_tpII#readme",
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0"
+  }
+}
