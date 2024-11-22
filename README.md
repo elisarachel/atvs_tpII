@@ -7,5 +7,5 @@ npm install
 ```
 3. Execute o comando:
 ```
-npx ts-node src/ts/index.ts
+npx ts-node <nome-do-arquivo-principal>
 ```
